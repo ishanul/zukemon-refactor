@@ -3,17 +3,14 @@ package com.zukemon.refactor.zukemons;
 
 public class Mudkip extends Zukemon {
 
+    public static final int NUMBER = 258;
+
     public Mudkip() {
-        super(200);
+        super(300);
     }
 
     @Override
     public int hit() {
         return 234;
-    }
-
-    @Override
-    public int getNumber() {
-        return 258;
     }
 }

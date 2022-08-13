@@ -8,6 +8,6 @@ public class ArenaDisplay {
 
     public void update(Zukemon zukemon, int damage) {
         this.damage = damage;
-        System.out.println(zukemon.getClass().getName() + "made " + damage + " damage");
+        System.out.println(zukemon.getClass().getSimpleName() + " made " + damage + " damage");
     }
 }

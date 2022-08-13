@@ -9,10 +9,16 @@ public abstract class Zukemon {
 
     public abstract int hit();
 
-    public abstract int getNumber();
-
-    public void reduceLifePoints(int lifePointsToReduce) {
+    public void reduceLifePointsBy(int lifePointsToReduce) {
         this.lifePoints = Math.max(0, lifePoints - lifePointsToReduce);
+    }
+
+    public void increaseLifePointsBy(int lifePointsToIncrease) {
+        this.lifePoints += lifePointsToIncrease;
+    }
+
+    public int getLifePoints() {
+        return lifePoints;
     }
 
     public boolean isDead() {

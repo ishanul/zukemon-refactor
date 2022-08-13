@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Krookodile extends Zukemon {
 
+    public static final int NUMBER = 553;
+
     List<Zukemon> teamMembers = List.of(new Blastoise(), new Mew(), new Wartortle(), new Mudkip(), new Pikachu(), new Psyduck());
 
     public Krookodile() {
-        super(400);
+        super(900);
     }
 
     @Override
@@ -18,10 +20,5 @@ public class Krookodile extends Zukemon {
             damage += zukemon.hit();
         }
         return damage;
-    }
-
-    @Override
-    public int getNumber() {
-        return 553;
     }
 }

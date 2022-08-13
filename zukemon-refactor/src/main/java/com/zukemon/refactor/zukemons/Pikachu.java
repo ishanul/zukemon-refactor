@@ -1,18 +1,14 @@
 package com.zukemon.refactor.zukemons;
 
 public class Pikachu extends Zukemon {
+    public static final int NUMBER = 25;
 
     public Pikachu() {
-        super(200);
+        super(400);
     }
 
     @Override
     public int hit() {
         return 135;
-    }
-
-    @Override
-    public int getNumber() {
-        return 25;
     }
 }

@@ -3,12 +3,14 @@ package com.zukemon.refactor.zukemons;
 import com.zukemon.refactor.CriticalHit;
 
 public class Mew extends Zukemon {
+    public static final int NUMBER = 151;
+
     private static final int damage = 150;
 
     CriticalHit criticalHit = new CriticalHit();
 
     public Mew() {
-        super(200);
+        super(400);
     }
 
     @Override
@@ -17,10 +19,5 @@ public class Mew extends Zukemon {
             return 2* damage;
         }
         return damage;
-    }
-
-    @Override
-    public int getNumber() {
-        return 151;
     }
 }
