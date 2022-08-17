@@ -3,7 +3,7 @@ package com.zukemon.refactor.fight;
 import com.zukemon.refactor.ZukemonFactory;
 import com.zukemon.refactor.zukemons.Zukemon;
 
-public class DefendFight extends FightGame {
+public class DefendFight extends FightingGame {
     private Zukemon attacker;
     private Zukemon defender;
 

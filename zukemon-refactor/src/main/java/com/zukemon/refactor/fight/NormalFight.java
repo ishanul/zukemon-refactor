@@ -4,7 +4,7 @@ import com.zukemon.refactor.ZukemonFactory;
 import com.zukemon.refactor.zukemons.Zukemon;
 
 
-public class NormalFight extends FightGame {
+public class NormalFight extends FightingGame {
     private Zukemon attacker;
     private Zukemon defender;
 

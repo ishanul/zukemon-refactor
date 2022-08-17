@@ -4,7 +4,7 @@ import com.zukemon.refactor.FightMode;
 import com.zukemon.refactor.ZukemonFactory;
 
 public class FightBehaviorFactory {
-    public static FightGame getFightBehavior(FightMode fightMode, ZukemonFactory zukemonFactory) {
+    public static FightingGame getFightBehavior(FightMode fightMode, ZukemonFactory zukemonFactory) {
         switch (fightMode) {
             case NORMAL:
                 return new NormalFight(zukemonFactory);

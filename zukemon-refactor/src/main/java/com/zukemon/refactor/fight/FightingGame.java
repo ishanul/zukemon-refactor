@@ -5,14 +5,14 @@ import com.zukemon.refactor.ZukemonFactory;
 import com.zukemon.refactor.history.HistoryWriter;
 import com.zukemon.refactor.zukemons.Zukemon;
 
-public abstract class FightGame {
+public abstract class FightingGame {
 
     private final ArenaDisplay arenaDisplay = new ArenaDisplay();
     private final HistoryWriter historyWriter = new HistoryWriter();
     private int highScore = 0;
     protected ZukemonFactory zukemonFactory;
 
-    public FightGame(ZukemonFactory zukemonFactory){
+    public FightingGame(ZukemonFactory zukemonFactory){
         this.zukemonFactory = zukemonFactory;
     }
 

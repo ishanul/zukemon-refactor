@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RoyalRumble extends FightGame {
+public class RoyalRumble extends FightingGame {
     private List<Zukemon> fighters = new ArrayList<>();
 
     public RoyalRumble(ZukemonFactory zukemonFactory) {

@@ -1,6 +1,6 @@
 package com.zukemon.refactor;
 
-import com.zukemon.refactor.fight.FightGame;
+import com.zukemon.refactor.fight.FightingGame;
 import com.zukemon.refactor.fight.FightBehaviorFactory;
 import com.zukemon.refactor.zukemons.Zukemon;
 
@@ -22,7 +22,7 @@ public class Fight {
      * @param fightMode the type of fightMode
      */
     public Zukemon fight(FightMode fightMode) {
-        FightGame fightGame = FightBehaviorFactory.getFightBehavior(fightMode, zukemonFactory);
+        FightingGame fightGame = FightBehaviorFactory.getFightBehavior(fightMode, zukemonFactory);
         return fightGame.play();
     }
 }
