@@ -7,10 +7,10 @@ public class DefendFight extends FightGame {
     private Zukemon attacker;
     private Zukemon defender;
 
-    private ZukemonFactory zukemonFactory;
     public DefendFight(ZukemonFactory zukemonFactory){
-        this.zukemonFactory = zukemonFactory;
+        super(zukemonFactory);
     }
+
     public void initialize(){
         attacker = zukemonFactory.createRandomZukemon();
         defender = zukemonFactory.createRandomZukemon();

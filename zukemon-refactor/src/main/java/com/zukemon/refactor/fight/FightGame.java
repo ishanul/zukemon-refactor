@@ -1,6 +1,7 @@
 package com.zukemon.refactor.fight;
 
 import com.zukemon.refactor.ArenaDisplay;
+import com.zukemon.refactor.ZukemonFactory;
 import com.zukemon.refactor.history.HistoryWriter;
 import com.zukemon.refactor.zukemons.Zukemon;
 
@@ -9,6 +10,11 @@ public abstract class FightGame {
     private final ArenaDisplay arenaDisplay = new ArenaDisplay();
     private final HistoryWriter historyWriter = new HistoryWriter();
     private int highScore = 0;
+    protected ZukemonFactory zukemonFactory;
+
+    public FightGame(ZukemonFactory zukemonFactory){
+        this.zukemonFactory = zukemonFactory;
+    }
 
     abstract void initialize();
 

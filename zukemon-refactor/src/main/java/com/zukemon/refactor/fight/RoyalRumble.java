@@ -10,10 +10,8 @@ import java.util.Random;
 public class RoyalRumble extends FightGame {
     private List<Zukemon> fighters = new ArrayList<>();
 
-    private ZukemonFactory zukemonFactory;
-
     public RoyalRumble(ZukemonFactory zukemonFactory) {
-        this.zukemonFactory = zukemonFactory;
+        super(zukemonFactory);
     }
 
     public void initialize() {

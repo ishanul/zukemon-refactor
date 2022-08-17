@@ -8,10 +8,8 @@ public class NormalFight extends FightGame {
     private Zukemon attacker;
     private Zukemon defender;
 
-    private ZukemonFactory zukemonFactory;
-
     public NormalFight(ZukemonFactory zukemonFactory) {
-        this.zukemonFactory = zukemonFactory;
+        super(zukemonFactory);
     }
 
     public void initialize() {
